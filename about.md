@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /about/
-title: About the Theme
-tags: [Jekyll, theme, modern, minimal, responsive]
+title: Jérôme Foray
+tags: [developeur, autodidacte]
 image:
   feature: abstract-5.jpg
   credit: dargadgetz
@@ -10,24 +10,14 @@ image:
 share: true
 ---
 
-They say three times the charm, so here is another free responsive Jekyll theme for you. I've learned a ton since open sourcing my first two themes [on Github](http://github.com/mmistakes), and wanted to try a few new things this time around. If you've used my previous themes most of this should be familiar territory...
+Bonjour !
+=========
 
-## What HPSTR brings to the table:
+Je suis un développeur autodidacte de 19ans passionné par le web et les nouvelles technologies.
 
-* Responsive templates for post, page, and post index `_layouts`. Looks great on mobile, tablet, and desktop devices.
-* Gracefully degrads in older browsers. Compatible with Internet Explorer 8+ and all modern browsers.  
-* Modern and minimal design.
-* Sweet animated menu.
-* Background image support.
-* Readable typography to make your words shine.
-* Support for large images to call out your favorite posts.
-* Comments powered by [Disqus](http://disqus.com) if you choose to enable.
-* Simple and clear permalink structure[^1].
-* [Open Graph](https://developers.facebook.com/docs/opengraph/) and [Twitter Cards](https://dev.twitter.com/docs/cards) support for a better social sharing experience.
-* Simple [custom 404 page]({{ site.url }}/404.html) to get you started.
-* Stylesheets for Pygments and Coderay [syntax highlighting]({{ site.url }}/code-highlighting-post/) to make your code examples look snazzy
-* [Grunt](http://gruntjs.com) build script for easy theme development
+Depuis 2005 j'apprend seul et mène une veille permanente. Cette veille m’a amenée à fréquenter les communautées anglophones, j’ai ainsi élargi mon champ d’observation, et renforcé mon niveau en anglais de façon conséquente.
+Je travaille habituellement sur mac, qui me permet de bénéficier d'application de qualité dédiées au développement web; ainsi que d’un envronnement UNIX avec lequel je suis à l’aise. Pour les besoins particuliers je n’hésite pas à déployer une machine virtuelle à l’aide de Vagrant.
 
-<div markdown="0"><a href="{{ site.url }}/theme-setup" class="btn btn-info">Install the Theme</a></div>
+Après un cursus en génice civil, j'ai fait le choix de me réorienter pour suivre cette passion qu'a toujours été le web pour moi. Je suis aujourd'hui dévelopeur au sein de l'agence [Eredia](http://eredia.fr/) et je vis mas passion à temps plein.
 
-[^1]: Example: *domain.com/category-name/post-title*
+Le dynamisme et l'évolution constante des technologies ne cessent de motiver mon apprentissage, et ceci avec la méthodologie propre à la programmation ont menés à ce choix de réorientation.

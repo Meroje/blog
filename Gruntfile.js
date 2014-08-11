@@ -80,6 +80,43 @@ module.exports = function(grunt) {
         'assets/css/main.min.css',
         'assets/js/scripts.min.js'
       ]
+    },
+    jekyll: {                             // Task
+      options: {                          // Universal options
+        bundleExec: true,
+        src : '<%= app %>'
+      },
+      dist: {                             // Target
+        options: {                        // Target options
+          dest: '<%= dist %>',
+          config: '_config.yml,_config.build.yml'
+        }
+      }
+    },
+    favicons: {
+      options: {
+        HTMLPrefix: '{{ site.url }}/assets/favicon/',
+        html: '_includes/favicons.html'
+      },
+      icons: {
+        src: 'images/avatar.jpg',
+        dest: 'assets/favicon'
+      }
+    },
+    boil: {
+      empty: {  
+        create: "_includes/favicons.html"
+      },
+      favicon: {  
+        create: [{
+          name: "favicon.png",
+          copy: "assets/favicon/favicon.png"
+        },
+        {
+          name: "favicon.ico",
+          copy: "assets/favicon/favicon.ico"
+        }]
+      }
     }
   });
 
@@ -91,14 +128,21 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-recess');
   grunt.loadNpmTasks('grunt-contrib-imagemin');
   grunt.loadNpmTasks('grunt-svgmin');
+  grunt.loadNpmTasks('grunt-jekyll');
+  grunt.loadNpmTasks('grunt-boil');
+  grunt.loadNpmTasks('grunt-favicons');
 
   // Register tasks
   grunt.registerTask('default', [
     'clean',
+    'boil:empty',
     'recess',
     'uglify',
+    'favicons',
     'imagemin',
-    'svgmin'
+    'svgmin',
+    'boil:favicon',
+    'jekyll'
   ]);
   grunt.registerTask('dev', [
     'watch'

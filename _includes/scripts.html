@@ -1,12 +1,10 @@
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script>window.jQuery || document.write('<script src="{{ site.url }}/assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
 <script src="{{ site.url }}/assets/js/scripts.min.js"></script>
 {% if site.google_analytics %}
 <!-- Asynchronous Google Analytics snippet -->
 <script>
   var _gaq = _gaq || [];
-  var pluginUrl = 
- '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
+  var pluginUrl = '//www.google-analytics.com/plugins/ga/inpage_linkid.js';
   _gaq.push(['_require', 'inpage_linkid', pluginUrl]);
   _gaq.push(['_setAccount', '{{ site.google_analytics }}']);
   _gaq.push(['_trackPageview']);
@@ -18,4 +16,31 @@
   })();
 </script>
 {% endif %}
+{% if site.stathat_counter %}
+<script>
+  var _StatHat = _StatHat || [];
+  _StatHat.push(['_setUser', '{{ site.stathat_user }}']);
+  _StatHat.push(['_trackCount', '{{ site.stathat_counter }}', 1.0]);
+
+  (function() {
+    var sh = document.createElement('script'); sh.type = 'text/javascript'; sh.async = true;
+    sh.src = '//www.stathat.com/javascripts/api.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(sh, s);
+  })();
+</script>
+{% endif %}
 {% if page.comments %}{% include disqus_comments.html %}{% endif %}
+{% if site.inspectlet %}
+<script>
+  window.__insp = window.__insp || [];
+  __insp.push(['wid', {{ site.inspectlet }}]);
+  (function() {
+    function __ldinsp(){var insp = document.createElement('script'); insp.type = 'text/javascript'; insp.async = true; insp.id = "inspsync"; insp.src = ('https:' == document.location.protocol ? 'https' : 'http') + '://cdn.inspectlet.com/inspectlet.js'; var x = document.getElementsByTagName('script')[0]; x.parentNode.insertBefore(insp, x); }
+    if (window.attachEvent){
+      window.attachEvent('onload', __ldinsp);
+    }else{
+      window.addEventListener('load', __ldinsp, false);
+    }
+  })();
+</script>
+{% endif %}

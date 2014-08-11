@@ -1,0 +1,17 @@
+url:              https://foray-jero.me
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   UA-29903530-1
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:         
+
+stathat_user:       NDIzOCA12MOrTTCHIh4gk7GOhOPe
+stathat_counter:    gDVfN1Mly_EnjwnHsfaGiCBKVWZL
+
+future:      false
+
+embedly:
+  api_key: df8f3e2ee8f411e0a7964040d3dc5c07
+
+inspectlet: 1523632106
