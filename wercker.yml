@@ -2,8 +2,6 @@
 box: wercker/ruby
 build:
   steps:
-    # Grab the posts
-    - git submodule update --init
     # Run a smart version of bundle install
     # which improves build execution time of
     # future builds
