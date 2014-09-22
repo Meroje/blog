@@ -1,0 +1,72 @@
+==================================================================
+https://keybase.io/meroje
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://foray-jero.me
+  * I am meroje (https://keybase.io/meroje) on keybase.
+  * I have a public key with fingerprint A279 58B4 FB91 2782 FC8D  5D3C 198D BC8B 3952 A88D
+
+To claim this, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "fingerprint": "a27958b4fb912782fc8d5d3c198dbc8b3952a88d",
+            "host": "keybase.io",
+            "key_id": "198dbc8b3952a88d",
+            "uid": "d6fc92e192a33cfc37a2261ca150df00",
+            "username": "meroje"
+        },
+        "service": {
+            "hostname": "foray-jero.me",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1398602763,
+    "expire_in": 157680000,
+    "prev": "8fc0b29eab7ab52958440a659c067beb65fa603a1bec532f37eb8d0662dd297a",
+    "seqno": 11,
+    "tag": "signature"
+}
+
+with the aforementioned key, yielding the PGP signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v0.1.12
+Comment: https://keybase.io/crypto
+
+yMMCAnicbZFtUFRlFMcXKd4SYnQ1UCi8CTa16H3Z+7aO0Gir6TggQtQMG8t9eS5e
+VvbS3QXCjYnFbWJwkRogllmtaapxC9gyCGKLEZQhgskSxDAcolmZjEGNXshEy2cZ
++9bz5ZnzP7/zP895zlBsuCYmLLHhy2PsQV9D2NjAb+WaXNOdhxwIr4hViMGBWMDK
+JcnWYqCWqbLVjhgQDqdZkuH1Es9iOM3gksCIpEgIGMuIvMDwBEviHMOIiA45pNhC
+FdCG52xgq6xADQZmWYTq//DlKwmRkgQWBxiLcwQhSAJBczhOYQKHkagooWgItAHV
+ypUCSJcCVSkBSLUOgVqFLEDNsdL4fl5SVK4qvQRSW2GsQ8pUxa4IymGYOmS3l9kM
+oVJ7VVmIrQS8+b6LmZetIpwbVlQA1SYrVsSAQVKwyyFbjGAZCsVpitAh4OUyWQVm
+OUSQNMWg8IT6gApoyUgCyuMs4Hia40kc/pxej3IUyQooRfOAp0iJo1CCw3ggkAQu
+ETTgGRGlKFwUcZbmYH8beMmqQG8MvpMrhp42udjK2ctVOPXZQdMDmrAYTcSDq0Kr
+08REx/+30D5vvObtmT66sTIn9aTX8c9zJ+9m9bpXf1x3oWl8sjrAbTbcyFz7RLJS
+YteZ/xpInkso1U55+poySrwfjDZ5Xa1tnXRcbU9wpnZ4+tRty/yaxOb9hdeS33Xq
+ax8WWX33eAKf0F64ZNl4ZyA/ynu1d1YoNQZ2jVQrtWf8+dqWC2fCUwqK+9PcPoTJ
+PrLLkTL2/PSVmfVHc853Zp+61Di2fDRqW2tNHbtQX2B4tkHu+OmP0R1Ljq6hhYxN
+i8yrlz5JXnVzMBZMPrPa9YU2rSE1t8NpWty5x/Ze58FuF3vZ+airbuJirhp3xJ29
+7PG4G3X1811ZzW/NBk83R8ZaPrdUo+0LzM0fftz0Rs6W+Yny4EBmS994YNwx8vS+
+NYPGv5ffN462Mp9OGb61fPNrIPoFvTGmOtu/OXjC7/8oN+tPX0/6BvNkpnjszQla
+vzfR9ZT2nevnlkduF2q1Jdd//ux4HXNxuq1+2Oo57Pn3dOpe5MTOPZmDRvb8h7Xx
+PWe/HyLvuq5sPJ7ckT9xK2rOHfH18LWUA3ndkXO9i2Jevymp8pGkx01JgRS9s6b9
+ddu+LvccjxU9uS245ATrgt+ZhtJfWYfs3h6dFz7sPPfa0pbpW8uPXU670bWh5fei
+tfN0nsdwNdDm+yWy0e8q6tpt/2p2slDTvT6rzzdVfyCiIKOpZnZ0f1z/i2xOjH77
+PbOumEE=
+=72RF
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/meroje
+
+==================================================================
+

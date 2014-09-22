@@ -3,5 +3,11 @@ _site
 .DS_Store
 *.sublime-project
 *.sublime-workspace
+.wercker
 codekit-config.json
 node_modules
+assets/favicon
+assets/css/main.min.css
+assets/js/scripts.min.js
+favicon.ico
+favicon.png

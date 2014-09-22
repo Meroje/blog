@@ -2,7 +2,7 @@ require 'rubygems'
 require 'jekyll'
 
 # Change your GitHub reponame
-GITHUB_REPONAME = "Meroje/meroje.github.com"
+GITHUB_REPONAME = "Meroje/blog"
 
 namespace :site do
   desc "Generate blog files"
