@@ -17,9 +17,10 @@ build:
 
     - grunt
 deploy:
-    - rsync-deploy:
-        host: $HOST
-        user: $USER
-        source: $SOURCE
-        directory: $DIRECTORY
-        sshkey: $DEPLOYKEY_PRIVATE
+    steps:
+        - sjoerdmulder/rsync-deploy:
+            host: $HOST
+            user: $USER
+            source: $SOURCE
+            directory: $DIRECTORY
+            sshkey: $DEPLOYKEY_PRIVATE
