@@ -126,17 +126,17 @@ module.exports = function (grunt) {
             css: {
                 files: [{
                     expand: true,
-                    src: '_site/{,**/,.**/}*.css',
+                    src: '_site/{,**/,.**/}*.min.css',
                     dest: './',
-                    ext: '.css.gz'
+                    ext: '.min.css.gz'
                 }]
             },
             js: {
                 files: [{
                     expand: true,
-                    src: '_site/{,**/,.**/}*.js',
+                    src: '_site/{,**/,.**/}*.min.js',
                     dest: './',
-                    ext: '.js.gz'
+                    ext: '.min.js.gz'
                 }]
             },
             xml: {
