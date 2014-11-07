@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: https://foray-jero.me/sitemap.xml
