@@ -189,12 +189,12 @@ module.exports = function (grunt) {
         'newer:imagemin',
         'boil:favicon',
         'jekyll',
-        'newer:zopfli:html',
-        'newer:zopfli:css',
-        'newer:zopfli:js',
-        'newer:zopfli:xml',
-        'newer:zopfli:json',
-        'newer:zopfli:txt'
+        'zopfli:html',
+        'zopfli:css',
+        'zopfli:js',
+        'zopfli:xml',
+        'zopfli:json',
+        'zopfli:txt'
     ]);
     grunt.registerTask('dev', [
         'watch'
