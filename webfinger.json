@@ -16,20 +16,11 @@
             "href": "https://foray-jero.me/about/"
         },
         {
-            "rel": "public-key",
-            "type": "text/plain",
-            "href": "https://github.com/meroje.keys",
-            "properties": {
-                "fingerprint": "59:8a:a8:78:8b:a9:8e:ae:52:3a:91:3e:31:56:98:b0",
-                "algorithm": "rsa"
-            }
-        },
-        {
             "rel": "pgpkey",
             "type": "application/pgp-keys",
             "href": "https://foray-jero.me/meroje.asc",
             "properties": {
-                "fingerprint": "77DB 93DD AC1E C787 474E B101 BA9A F2A3 89B1 143A",
+                "fingerprint": "7403 40C0 E1EF 99DF 9D05  B944 0592 D0A2 50B7 1B40",
                 "algorithm": "rsa"
             }
         }
