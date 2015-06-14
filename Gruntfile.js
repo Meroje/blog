@@ -2,6 +2,11 @@
 module.exports = function (grunt) {
 
     grunt.initConfig({
+        env: {
+            dist: {
+                LC_ALL: "en_US.UTF-8"
+            }
+        },
         jshint: {
             options: {
                 jshintrc: '.jshintrc'
@@ -9,7 +14,6 @@ module.exports = function (grunt) {
             all: [
                 'Gruntfile.js',
                 'assets/js/*.js',
-                'assets/js/plugins/*.js',
                 '!assets/js/scripts.min.js'
             ]
         },
@@ -124,7 +128,7 @@ module.exports = function (grunt) {
             html: {
                 files: [{
                     expand: true,
-                    src: '_site/{,**/,.**/}*.html',
+                    src: '_site/**.html',
                     dest: './',
                     ext: '.html.gz'
                 }]
@@ -132,7 +136,7 @@ module.exports = function (grunt) {
             css: {
                 files: [{
                     expand: true,
-                    src: '_site/{,**/,.**/}*.min.css',
+                    src: '_site/**.min.css',
                     dest: './',
                     ext: '.min.css.gz'
                 }]
@@ -140,7 +144,7 @@ module.exports = function (grunt) {
             js: {
                 files: [{
                     expand: true,
-                    src: '_site/{,**/,.**/}*.min.js',
+                    src: '_site/**.min.js',
                     dest: './',
                     ext: '.min.js.gz'
                 }]
@@ -148,7 +152,7 @@ module.exports = function (grunt) {
             xml: {
                 files: [{
                     expand: true,
-                    src: '_site/{,**/,.**/}*.xml',
+                    src: '_site/**.xml',
                     dest: './',
                     ext: '.xml.gz'
                 }]
@@ -156,7 +160,7 @@ module.exports = function (grunt) {
             json: {
                 files: [{
                     expand: true,
-                    src: '_site/{,**/,.**/}*.json',
+                    src: '_site/**.json',
                     dest: './',
                     ext: '.json.gz'
                 }]
@@ -164,7 +168,7 @@ module.exports = function (grunt) {
             txt: {
                 files: [{
                     expand: true,
-                    src: '_site/{,**/,.**/}*.txt',
+                    src: '_site/**.txt',
                     dest: './',
                     ext: '.txt.gz'
                 }]
@@ -173,6 +177,7 @@ module.exports = function (grunt) {
     });
 
     // Load tasks
+    grunt.loadNpmTasks('grunt-env');
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
@@ -187,6 +192,7 @@ module.exports = function (grunt) {
 
     // Register tasks
     grunt.registerTask('default', [
+        'env',
         'clean',
         'boil:empty',
         'recess',

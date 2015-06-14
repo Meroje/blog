@@ -1,9 +1,11 @@
 _cache
 _site
+_builds
+_steps
+_projects
 .DS_Store
 *.sublime-project
 *.sublime-workspace
-.wercker
 codekit-config.json
 node_modules
 assets/favicon
