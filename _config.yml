@@ -8,7 +8,7 @@ url:              http://localhost:4000
 owner:
   name:           Jérôme Foray
   avatar:         avatar.jpg
-  bio:            "Je suis un développeur autodidacte de 20ans passionné par le web et les nouvelles technologies."
+  bio:            "Je suis un développeur autodidacte passionné par le web et les nouvelles technologies."
   email:          moi@foray-jero.me
   # Social networking links used in footer. Update and remove as you like.
   twitter:        meroje01
@@ -62,7 +62,39 @@ permalink:   /:categories/:title
 paginate: 5
 
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", "with_toc_data"]
+  extensions: [
+    "no_intra_emphasis",
+    "fenced_code_blocks",
+    "autolink",
+    "strikethrough",
+    "superscript",
+    "with_toc_data"
+  ]
 
-include: [".well-known", "_irc"]
-exclude: ["lib", "config.rb", "Capfile", "config", "log", "Rakefile", "Rakefile.rb", "Gemfile", "Gemfile.lock", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules", "README.md", "LICENSE"]
+include: [
+  ".well-known",
+  "_irc"
+]
+exclude: [
+  "lib",
+  "config.rb",
+  "Capfile",
+  "config",
+  "log",
+  "Rakefile",
+  "Rakefile.rb",
+  "Gemfile",
+  "Gemfile.lock",
+  "tmp",
+  "less",
+  "*.sublime-project",
+  "*.sublime-workspace",
+  "test",
+  "spec",
+  "Gruntfile.js",
+  "package.json",
+  "node_modules",
+  "README.md",
+  "LICENSE",
+  "wercker.yml"
+]

@@ -77,6 +77,12 @@ module.exports = function (grunt) {
                 bundleExec: true,
                 src : '<%= app %>'
             },
+            local: {                             // Target
+                options: {                      // Target options
+                    dest: '<%= dist %>',
+                    config: '_config.yml'
+                }
+            },
             dist: {                             // Target
                 options: {                      // Target options
                     dest: '<%= dist %>',
@@ -188,13 +194,8 @@ module.exports = function (grunt) {
         'favicons',
         'newer:imagemin',
         'boil:favicon',
-        'jekyll',
-        'zopfli:html',
-        'zopfli:css',
-        'zopfli:js',
-        'zopfli:xml',
-        'zopfli:json',
-        'zopfli:txt'
+        'jekyll:dist',
+        'zopfli'
     ]);
     grunt.registerTask('dev', [
         'watch'
