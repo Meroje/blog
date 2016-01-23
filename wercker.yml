@@ -26,6 +26,11 @@ build:
             webhook_url: $SLACK_WEBHOOK_URL
 deploy:
     steps:
+        - script:
+            name: install rsync
+            code: |
+                apt-get update
+                apt-get install rsync -y
         - mktemp:
             envvar: PRIVATEKEY_PATH
         - create-file:
