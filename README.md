@@ -1,1 +1,2 @@
-Based on [HPSTR Jekyll Theme](https://github.com/mmistakes/hpstr-jekyll-theme)
+Based on [HPSTR Jekyll Theme](https://github.com/mmistakes/hpstr-jekyll-theme)  
+[![wercker status](https://app.wercker.com/status/97c9c61a5a2107a64c264ff735a7e66e/s/master "wercker status")](https://app.wercker.com/project/bykey/97c9c61a5a2107a64c264ff735a7e66e)

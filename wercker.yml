@@ -3,12 +3,17 @@ box: phusion/passenger-ruby22
 build:
     steps:
         - script:
-            name: install zopfli
+            name: install bindeps
             code: |
                 apt-get update
-                apt-get install zopfli
-                apt-get clean
-                rm -rf /var/lib/apt/lists/*
+                apt-get install git zopfli -y
+        - add-to-known_hosts:
+            hostname: github.com
+            fingerprint: 16:27:ac:a5:76:28:2d:36:63:1b:56:4d:eb:df:a6:48
+        - script:
+            name: initialize git submodules
+            code: |
+                git submodule update --init --recursive
         - script:
             name: update npm
             code: |
@@ -16,3 +21,26 @@ build:
         - bundle-install
         - npm-install
         - grunt
+    after-steps:
+        - wantedly/pretty-slack-notify:
+            webhook_url: $SLACK_WEBHOOK_URL
+deploy:
+    steps:
+        - add-ssh-key:
+            keyname: DEPLOY_KEY
+        - script:
+            name: knock on door
+            code: |
+                IFS=' ' read -r -a PORTS <<< "$KNOCK_PORTS"
+                for PORT in "${PORTS[@]}" ; do nmap -Pn --host_timeout 100 --max-retries 0 -p $PORT $DEPLOY_HOST ; done
+        - add-to-known_hosts:
+            hostname: foray-jero.me
+            fingerprint: AAAAC3NzaC1lZDI1NTE5AAAAIM9hMCArQf8PcLl6c6Yqo1O/QnAk+fHefgBWCZG6Yc4c
+        - fedor/rsync-soft-deploy:
+            host: $DEPLOY_HOST
+            directory: $DEPLOY_DIRECTORY
+            sshkey: $PRIVATEKEY_FILE
+            source: _site
+    after-steps:
+        - wantedly/pretty-slack-notify:
+            webhook_url: $SLACK_WEBHOOK_URL
