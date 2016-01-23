@@ -3,7 +3,7 @@ box: phusion/passenger-ruby22
 build:
     steps:
         - script:
-            name: apt-get update
+            name: install zopfli
             code: |
                 apt-get update
                 apt-get install zopfli
