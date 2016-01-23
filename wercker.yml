@@ -39,7 +39,6 @@ deploy:
         - fedor/rsync-soft-deploy:
             host: $DEPLOY_HOST
             directory: $DEPLOY_DIRECTORY
-            sshkey: $PRIVATEKEY_FILE
             source: _site
     after-steps:
         - wantedly/pretty-slack-notify:
