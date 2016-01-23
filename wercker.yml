@@ -47,6 +47,11 @@ deploy:
         - add-to-known_hosts:
             hostname: foray-jero.me
             fingerprint: AAAAC3NzaC1lZDI1NTE5AAAAIM9hMCArQf8PcLl6c6Yqo1O/QnAk+fHefgBWCZG6Yc4c
+        - script:
+            name: knock on door again
+            code: |
+                IFS=' ' read -r -a PORTS <<< "$KNOCK_PORTS"
+                for PORT in "${PORTS[@]}" ; do nmap -Pn --host_timeout 100 --max-retries 0 -p $PORT $DEPLOY_HOST ; done
         - fedor/rsync-soft-deploy:
             host: $DEPLOY_HOST
             user: $DEPLOY_USER
