@@ -26,8 +26,14 @@ build:
             webhook_url: $SLACK_WEBHOOK_URL
 deploy:
     steps:
-        - add-ssh-key:
-            keyname: DEPLOY_KEY
+        - mktemp:
+          envvar: PRIVATEKEY_PATH
+       - create-file:
+          name: write key
+          filename: $PRIVATEKEY_PATH
+          content: $DEPLOY_KEY_PRIVATE
+          overwrite: true
+          hide-from-log: true
         - script:
             name: knock on door
             code: |
@@ -38,6 +44,8 @@ deploy:
             fingerprint: AAAAC3NzaC1lZDI1NTE5AAAAIM9hMCArQf8PcLl6c6Yqo1O/QnAk+fHefgBWCZG6Yc4c
         - fedor/rsync-soft-deploy:
             host: $DEPLOY_HOST
+            user: $DEPLOY_USER
+            sshkey: $PRIVATEKEY_PATH
             directory: $DEPLOY_DIRECTORY
             source: _site
     after-steps:
