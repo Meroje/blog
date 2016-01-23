@@ -27,10 +27,10 @@ build:
 deploy:
     steps:
         - script:
-            name: install rsync
+            name: install bindeps
             code: |
                 apt-get update
-                apt-get install rsync -y
+                apt-get install rsync nmap -y
         - mktemp:
             envvar: PRIVATEKEY_PATH
         - create-file:
