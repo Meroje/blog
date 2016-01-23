@@ -28,7 +28,7 @@ deploy:
     steps:
         - mktemp:
             envvar: PRIVATEKEY_PATH
-       - create-file:
+        - create-file:
             name: write key
             filename: $PRIVATEKEY_PATH
             content: $DEPLOY_KEY_PRIVATE
