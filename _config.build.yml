@@ -14,7 +14,7 @@ future: false
 embedly:
   api_key: df8f3e2ee8f411e0a7964040d3dc5c07
 
-inspectlet: 1523632106
+inspectlet:
 
 newrelic_key: 71b4ca928e
 newrelic_id: 14312987
