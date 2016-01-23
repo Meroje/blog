@@ -6,18 +6,25 @@ I hereby claim:
 
   * I am an admin of https://foray-jero.me
   * I am meroje (https://keybase.io/meroje) on keybase.
-  * I have a public key with fingerprint A279 58B4 FB91 2782 FC8D  5D3C 198D BC8B 3952 A88D
+  * I have a public key with fingerprint 7403 40C0 E1EF 99DF 9D05  B944 0592 D0A2 50B7 1B40
 
-To claim this, I am signing this object:
+To do so, I am signing this object:
 
 {
     "body": {
         "key": {
-            "fingerprint": "a27958b4fb912782fc8d5d3c198dbc8b3952a88d",
+            "eldest_kid": "0101b14803eb4631451abaafbb516832d321650aa99c4a7a93c719904bdc3b06cd8e0a",
+            "fingerprint": "740340c0e1ef99df9d05b9440592d0a250b71b40",
             "host": "keybase.io",
-            "key_id": "198dbc8b3952a88d",
+            "key_id": "0592d0a250b71b40",
+            "kid": "0101b14803eb4631451abaafbb516832d321650aa99c4a7a93c719904bdc3b06cd8e0a",
             "uid": "d6fc92e192a33cfc37a2261ca150df00",
             "username": "meroje"
+        },
+        "revoke": {
+            "sig_ids": [
+                "37d04166c0a6516f3ee4fc6849496aa3d2702c5612302886099b9e3b07c435240f"
+            ]
         },
         "service": {
             "hostname": "foray-jero.me",
@@ -26,41 +33,43 @@ To claim this, I am signing this object:
         "type": "web_service_binding",
         "version": 1
     },
-    "ctime": 1398602763,
+    "ctime": 1453559893,
     "expire_in": 157680000,
-    "prev": "8fc0b29eab7ab52958440a659c067beb65fa603a1bec532f37eb8d0662dd297a",
-    "seqno": 11,
+    "prev": "a54e1d0aa6375ae9a8031a58bc78613218969ed29c76b35605631bc700cfb7a7",
+    "seqno": 32,
     "tag": "signature"
 }
 
-with the aforementioned key, yielding the PGP signature:
+which yields the signature:
 
 -----BEGIN PGP MESSAGE-----
-Version: Keybase OpenPGP v0.1.12
+Version: Keybase OpenPGP v2.0.49
 Comment: https://keybase.io/crypto
 
-yMMCAnicbZFtUFRlFMcXKd4SYnQ1UCi8CTa16H3Z+7aO0Gir6TggQtQMG8t9eS5e
-VvbS3QXCjYnFbWJwkRogllmtaapxC9gyCGKLEZQhgskSxDAcolmZjEGNXshEy2cZ
-+9bz5ZnzP7/zP895zlBsuCYmLLHhy2PsQV9D2NjAb+WaXNOdhxwIr4hViMGBWMDK
-JcnWYqCWqbLVjhgQDqdZkuH1Es9iOM3gksCIpEgIGMuIvMDwBEviHMOIiA45pNhC
-FdCG52xgq6xADQZmWYTq//DlKwmRkgQWBxiLcwQhSAJBczhOYQKHkagooWgItAHV
-ypUCSJcCVSkBSLUOgVqFLEDNsdL4fl5SVK4qvQRSW2GsQ8pUxa4IymGYOmS3l9kM
-oVJ7VVmIrQS8+b6LmZetIpwbVlQA1SYrVsSAQVKwyyFbjGAZCsVpitAh4OUyWQVm
-OUSQNMWg8IT6gApoyUgCyuMs4Hia40kc/pxej3IUyQooRfOAp0iJo1CCw3ggkAQu
-ETTgGRGlKFwUcZbmYH8beMmqQG8MvpMrhp42udjK2ctVOPXZQdMDmrAYTcSDq0Kr
-08REx/+30D5vvObtmT66sTIn9aTX8c9zJ+9m9bpXf1x3oWl8sjrAbTbcyFz7RLJS
-YteZ/xpInkso1U55+poySrwfjDZ5Xa1tnXRcbU9wpnZ4+tRty/yaxOb9hdeS33Xq
-ax8WWX33eAKf0F64ZNl4ZyA/ynu1d1YoNQZ2jVQrtWf8+dqWC2fCUwqK+9PcPoTJ
-PrLLkTL2/PSVmfVHc853Zp+61Di2fDRqW2tNHbtQX2B4tkHu+OmP0R1Ljq6hhYxN
-i8yrlz5JXnVzMBZMPrPa9YU2rSE1t8NpWty5x/Ze58FuF3vZ+airbuJirhp3xJ29
-7PG4G3X1811ZzW/NBk83R8ZaPrdUo+0LzM0fftz0Rs6W+Yny4EBmS994YNwx8vS+
-NYPGv5ffN462Mp9OGb61fPNrIPoFvTGmOtu/OXjC7/8oN+tPX0/6BvNkpnjszQla
-vzfR9ZT2nevnlkduF2q1Jdd//ux4HXNxuq1+2Oo57Pn3dOpe5MTOPZmDRvb8h7Xx
-PWe/HyLvuq5sPJ7ckT9xK2rOHfH18LWUA3ndkXO9i2Jevymp8pGkx01JgRS9s6b9
-ddu+LvccjxU9uS245ATrgt+ZhtJfWYfs3h6dFz7sPPfa0pbpW8uPXU670bWh5fei
-tfN0nsdwNdDm+yWy0e8q6tpt/2p2slDTvT6rzzdVfyCiIKOpZnZ0f1z/i2xOjH77
-PbOumEE=
-=72RF
+yMOFAnicrZJtUFRVGMcXAoOFlKKXwZDqBjZDu8y57/euNJOYYJkhFZCDBufeey5c
+Fvau+wKLsOIMBeIIuWkTmElMmZOgYk3m5EwJZoPIaC/QFOAObwFKIC8ljjHZWbJP
+fe18OXPu+T//53f/z/nmvnsMxqDxsHB/3ei7J4Iutc+7DVkf7sssJyRdKSMs5YQV
+LW2oSEFOV65VUwgLAUhASiQjABpJDEeTDEtCCUJVkliSE2hKoSmSYwGEoigzkIci
+LfOkKAJGUmRaApysCAhAwkSomi0fOewOzebCtjwDaAbIAJFIFUVFFRXASiLDAFak
+FAApFkg8KTEAFxbozkAFhpOgEyVpOv6GD7n/4P1X/z9zu5fsFE6VRQqRIgVpWlZl
+mocUxZEyJFmgqCDQ1+1EDhssRlhdjBx6ISK8JsKBSnQrCqTq1PIxspOw5BA0rwCG
+5DgZQA7TqDRCjCpzAiMyIgchrVA8oGSWIykaUILAAVGURISpeJmhWYoBKrENe+N+
+JZq8ZB7I6G5vVXfAMnMhJkjCZxNhd+guXdaL8FWBy2V3WgJYrjJ7QFuKpNy7LrmS
+ZlPwiHBFCXI4Nd1GWEislF1awBbnR7OsKIi0iUAeu+ZAuVpAwfKcAPAK9EEl2BKy
+DCLxRCBH8yxEIsQTICErSDIvcCQOXRA5ESmUKPOcRLMcYPFw8CUAsirxkCcC/7Xd
+phMWmsKcMB974uhs0OV24EQ72reGGIKMhmWhwYG3azCGR/37orv6VtxJ71/eNffQ
+9UH32bi0mOjoD44xB8Z3xTviT/36+ND5zNpT1VPmlJnWmqHX66kk5WbLId9Hffrp
+uqgbhT3W9aXu7IIdzlteY+feGuLM26HlRfXdT0VqGXNf5XgSWhbMnZu8a+RD5U1f
+P9o6sXvOGFF7f5zbbsma20ilUX7eu6L4aJtrQosoi+XmK2ZXXTvyZfXh8MhXX+mx
+VUYlp/7hk25aYSodWt4wvtD/fOWG7OZHwo5+Otn1oBp77DV7xODI75vzr4WNvdES
+fWvd+vq+2l5LTtsDa6/P+L6jb6wlEv37fRvKVKG/39xc/7Flq5BlKHrLHN24x33g
+ZDJN5zSOxjSvqRmvmO7Y1hEVj44Xrcu6ULM743DVm8TBhKS2J+ISpzK75cWI4Rcv
+t2kjDXnPPnY2q37758PN3w4H/Ta8kHHQN2hx9UzYKk1VjbN7KzfvDCqV46svUek5
+Zs+ul87Nptf9lOy73bU/7ZOeVZuYqkijN3HjwNDV9+rc3rzVy96Zmr9y4c8fTYsr
+f05BVPWVvJmS97WU0/5zkTtDzsem3D7jacquPDndqO+oYOfTExqkJ/W/nmkdu+qN
+W+1ZjCmcHF0enjokjMRtsXduqXINOE5MxC/I37/g/6Hd03sx0/bZy92mlUPBd45P
+TT8cWTVQG/LF04uT3f6KxCNaci8/1nTvL63PXQzuv7xv2vo3Ocvd+Q==
+=srdN
 -----END PGP MESSAGE-----
 
 And finally, I am proving ownership of this host by posting or
@@ -69,4 +78,3 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/meroje
 
 ==================================================================
-
