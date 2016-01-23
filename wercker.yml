@@ -41,14 +41,15 @@ deploy:
             hide-from-log: true
         - script:
             name: knock on door
+            log: false
             code: |
                 IFS=' ' read -r -a PORTS <<< "$KNOCK_PORTS"
                 for PORT in "${PORTS[@]}" ; do nmap -Pn --host_timeout 100 --max-retries 0 -p $PORT $DEPLOY_HOST ; done
         - add-to-known_hosts:
             hostname: foray-jero.me
-            fingerprint: AAAAC3NzaC1lZDI1NTE5AAAAIM9hMCArQf8PcLl6c6Yqo1O/QnAk+fHefgBWCZG6Yc4c
         - script:
             name: knock on door again
+            log: false
             code: |
                 IFS=' ' read -r -a PORTS <<< "$KNOCK_PORTS"
                 for PORT in "${PORTS[@]}" ; do nmap -Pn --host_timeout 100 --max-retries 0 -p $PORT $DEPLOY_HOST ; done
