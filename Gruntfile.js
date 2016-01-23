@@ -4,7 +4,9 @@ module.exports = function (grunt) {
     grunt.initConfig({
         env: {
             dist: {
-                LC_ALL: "en_US.UTF-8"
+                LANGUAGE: "en_US.UTF-8",
+                LC_ALL: "en_US.UTF-8",
+                LANG: "en_US.UTF-8"
             }
         },
         jshint: {
@@ -13,7 +15,7 @@ module.exports = function (grunt) {
             },
             all: [
                 'Gruntfile.js',
-                'assets/js/*.js',
+                'assets/js/**/.js',
                 '!assets/js/scripts.min.js'
             ]
         },
@@ -51,7 +53,7 @@ module.exports = function (grunt) {
                 files: [{
                     expand: true,
                     cwd: 'images/',
-                    src: '{,*/}*.{png,jpg,jpeg,svg}',
+                    src: '**/*.{png,jpg,gif,jpeg}',
                     dest: 'images/'
                 }]
             }
@@ -72,6 +74,7 @@ module.exports = function (grunt) {
         },
         clean: {
             dist: [
+                '_site',
                 'assets/css/main.min.css',
                 'assets/js/scripts.min.js'
             ]
@@ -128,7 +131,7 @@ module.exports = function (grunt) {
             html: {
                 files: [{
                     expand: true,
-                    src: '_site/**.html',
+                    src: '_site/**/*.html',
                     dest: './',
                     ext: '.html.gz'
                 }]
@@ -136,7 +139,7 @@ module.exports = function (grunt) {
             css: {
                 files: [{
                     expand: true,
-                    src: '_site/**.min.css',
+                    src: '_site/**/*.min.css',
                     dest: './',
                     ext: '.min.css.gz'
                 }]
@@ -144,7 +147,7 @@ module.exports = function (grunt) {
             js: {
                 files: [{
                     expand: true,
-                    src: '_site/**.min.js',
+                    src: '_site/**/*.min.js',
                     dest: './',
                     ext: '.min.js.gz'
                 }]
@@ -152,7 +155,7 @@ module.exports = function (grunt) {
             xml: {
                 files: [{
                     expand: true,
-                    src: '_site/**.xml',
+                    src: '_site/**/*.xml',
                     dest: './',
                     ext: '.xml.gz'
                 }]
@@ -160,7 +163,7 @@ module.exports = function (grunt) {
             json: {
                 files: [{
                     expand: true,
-                    src: '_site/**.json',
+                    src: '_site/**/*.json',
                     dest: './',
                     ext: '.json.gz'
                 }]
@@ -168,7 +171,7 @@ module.exports = function (grunt) {
             txt: {
                 files: [{
                     expand: true,
-                    src: '_site/**.txt',
+                    src: '_site/**/*.txt',
                     dest: './',
                     ext: '.txt.gz'
                 }]
