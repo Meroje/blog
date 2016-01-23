@@ -27,13 +27,13 @@ build:
 deploy:
     steps:
         - mktemp:
-          envvar: PRIVATEKEY_PATH
+            envvar: PRIVATEKEY_PATH
        - create-file:
-          name: write key
-          filename: $PRIVATEKEY_PATH
-          content: $DEPLOY_KEY_PRIVATE
-          overwrite: true
-          hide-from-log: true
+            name: write key
+            filename: $PRIVATEKEY_PATH
+            content: $DEPLOY_KEY_PRIVATE
+            overwrite: true
+            hide-from-log: true
         - script:
             name: knock on door
             code: |
