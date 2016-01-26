@@ -47,6 +47,7 @@ deploy:
                 for PORT in "${PORTS[@]}" ; do nmap -Pn --host_timeout 100 --max-retries 0 -p $PORT $DEPLOY_HOST ; done
         - add-to-known_hosts:
             hostname: foray-jero.me
+            fingerprint: 3b:32:08:e8:0a:12:2c:bf:dc:56:0a:66:f5:48:28:d2
         - script:
             name: knock on door again
             log: false
