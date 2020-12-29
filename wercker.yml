@@ -5,7 +5,7 @@ build:
         - script:
             name: install bindeps
             code: |
-                curl -sL https://deb.nodesource.com/setup_10.x | bash -
+                curl -sL https://deb.nodesource.com/setup_8.x | bash -
                 apt-get update
                 apt-get install git zopfli nodejs -y
         - add-to-known_hosts:
