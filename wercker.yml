@@ -17,6 +17,7 @@ build:
                 git submodule update --init --recursive
         - bundle-install
         - npm-install
+        - npm install -g grunt-cli@0.1.13
         - grunt
     after-steps:
         - wantedly/pretty-slack-notify:
